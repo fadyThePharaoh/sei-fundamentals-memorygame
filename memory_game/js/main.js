@@ -63,6 +63,13 @@ var createBoard = function() {
 	};
 }
 
+var resetButton = document.getElementById('button');
+resetButton.addEventListener('click', resetBoard);
+
+var resetBoard = function() {
+	cardsInPlay.reset();
+}
+
 createBoard();
 
 
